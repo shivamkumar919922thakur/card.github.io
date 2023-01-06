@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans",sans-serif;
+}
+
+.head{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.right{
+  position: absolute;
+  left: -10%;
+  top: -80%;
+}
+
+.left{
+  position: absolute;
+  right: -10%;
+  bottom: -80%;
+}
+
+.card{
+  border-radius: 8px;
+  box-shadow: 0 2px 20px 2px rgb(97, 97, 97);
+  z-index: 9;
+}
+
+.top{
+  width: 100%;
+  height: 8rem;
+  background-image: url(./images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.middle{
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  gap: 0.8rem;
+  padding-bottom: 1.5rem;
+  padding-top: 4rem;
+  position: relative;
+}
+
+.person{
+  width: 6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px solid white;
+  /* position: relative;
+  top: -2.8rem; */
+  position: absolute;
+  top: -32%;
+}
+
+.para{
+  display: flex;
+  gap: 0.8rem;
+}
+
+.bottom{
+  background-color: #fff;
+  border-top: 0.5px solid rgb(86, 86, 86);
+  padding: 1rem 3.5rem;
+  display: grid;
+  gap: 1.89rem;
+  grid-template-columns: repeat(3,1fr);
+  place-items: center;
+  justify-content: space-evenly;
+  border-radius: 0 0 8px 8px;
+}
+
+.p{
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.pp{
+  color: hsl(229, 23%, 23%);
+  font-weight: 300;
+  font-size: 1rem;
+}
+.bottom-para,.lk{
+  color: hsl(227, 10%, 46%);
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.lk{
+  font-size: 0.7rem;
+}
+@media screen and (max-width:450px) {
+  .right{
+    position: absolute;
+    left: -35%;
+    top: 65%;
+  }
+  
+  .left{
+    position: absolute;
+    right: 10%;
+    bottom: -60%;
+  }
+  
+}
